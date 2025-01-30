@@ -18,4 +18,3 @@ final class LoginSuccess extends LoginState {
 }
 
 final class LoginLogout extends LoginState {}
-

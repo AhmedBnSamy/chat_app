@@ -1,5 +1,6 @@
-part of 'register_cubit.dart';
 
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:meta/meta.dart';
 @immutable
 sealed class RegisterState {}
 
