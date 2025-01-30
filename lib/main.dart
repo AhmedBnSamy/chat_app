@@ -1,4 +1,5 @@
 
+import 'package:chat_app/cubits/chat_cubit/chat_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,12 +27,14 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context)=>RegisterCubit()),
         BlocProvider(create: (context)=>LoginCubit()),
+        BlocProvider(create: (context)=>ChatCubit()..fetchMessages()),
+
 
       ],
 
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: login(),
+        home: LoginScreen(),
       ),
     );
   }

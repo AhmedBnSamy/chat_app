@@ -9,8 +9,8 @@ import '../../../cubits/login_cubit/login_cubit.dart';
 
 import '../chat/chat_screen.dart';
 
-class login extends StatelessWidget {
-  login({Key? key}) : super(key: key);
+class LoginScreen extends StatelessWidget {
+  LoginScreen({Key? key}) : super(key: key);
 
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();

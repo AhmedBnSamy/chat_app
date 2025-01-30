@@ -13,21 +13,20 @@ class Chatpuble extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Container(
-        margin: EdgeInsets.all(8), // المساحه اللي برا تبعد عنها بقد ايه
-        child: Padding(
-          //المساحه الداخليه لل container تبعد قد ايه من ال text
-          padding: const EdgeInsets.all(20.0),
-          child: Text(
-            messagepuble.message,
-            style: TextStyle(color: Colors.white, fontSize: 26),
-          ),
-        ),
+        margin: EdgeInsets.all(8),
         decoration: BoxDecoration(
           color: Colors.deepPurple,
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(32),
             topRight: Radius.circular(32),
             bottomRight: Radius.circular(32),
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Text(
+            messagepuble.message,
+            style: TextStyle(color: Colors.white, fontSize: 26),
           ),
         ),
       ),
